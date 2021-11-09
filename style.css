@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Zilla+Slab&display=swap");
+/* @import url("https://use.typekit.net/lex6zgy.css"); */
+
+p {
+  font-family: "Zilla Slab", sans-serif;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+}
+h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.row {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.dark-font {
+  color: #2e077d;
+}
+
+.light-font {
+  color: #f8f8f8;
+}
+
+.section_gettingStarted {
+  background-color: #cdcdcd;
+}
+
+.section_active_users {
+  background: url("./images/Vector.png") left no-repeat #ff7f5c;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
