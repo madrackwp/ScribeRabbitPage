@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Zilla+Slab&display=swap");
 /* @import url("https://use.typekit.net/lex6zgy.css"); */
+img {
+  width: 100%;
+}
 
 p {
   font-family: "Zilla Slab", sans-serif;
@@ -17,9 +20,13 @@ h3 {
   font-weight: 700;
 }
 
+.text-container {
+  text-align: left;
+  /* padding: 20px; */
+}
+
 .row {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 50px 60px;
 }
 
 .dark-font {
@@ -34,11 +41,38 @@ h3 {
   background-color: #cdcdcd;
 }
 
+.section_gettingStarted button,
+.section_letsgo button {
+  background-color: transparent;
+  border-radius: 42px;
+  border: 3px solid #2e077d;
+  display: inline-block;
+  cursor: pointer;
+  color: #2e077d;
+  font-family: Trebuchet MS;
+  font-size: 17px;
+  padding: 13px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+
 .section_active_users {
   background: url("./images/Vector.png") left no-repeat #ff7f5c;
+  background-size: auto;
   height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.section_step1,
+.section_step2,
+.section_step3,
+.section_step4 {
+  background-color: #72cec1;
+}
+
+.section_letsgo {
+  background: #ff7f5c;
 }
