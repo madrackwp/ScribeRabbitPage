@@ -9,6 +9,13 @@ p {
   font-size: 24px;
 }
 
+a {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #2e077d;
+}
+
 h2 {
   font-family: "Work Sans", sans-serif;
   font-size: 64px;
@@ -27,6 +34,9 @@ h3 {
 
 .row {
   padding: 50px 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
 .dark-font {
@@ -37,23 +47,55 @@ h3 {
   color: #f8f8f8;
 }
 
+.navbar {
+  background-color: #ff7f5c;
+  width: 100%;
+  position: fixed;
+  top: 0%;
+}
+
+.navbar ul {
+  width: 100%;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
 .section_gettingStarted {
   background-color: #cdcdcd;
 }
 
-.section_gettingStarted button,
-.section_letsgo button {
+.section_gettingStarted img {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: auto;
+
+  max-height: 300px;
+}
+
+.section_gettingStarted button {
   background-color: transparent;
   border-radius: 42px;
   border: 3px solid #2e077d;
   display: inline-block;
   cursor: pointer;
   color: #2e077d;
-  font-family: Trebuchet MS;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 24px;
   padding: 13px 31px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #2f6627;
+  font-family: "zilla slab", sans-serif;
 }
 
 .section_active_users {
@@ -73,6 +115,31 @@ h3 {
   background-color: #72cec1;
 }
 
+.step-header {
+  font-size: 32px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
 .section_letsgo {
   background: #ff7f5c;
+}
+
+.section_letsgo button {
+  background-color: #fff;
+  border-radius: 42px;
+  display: inline-block;
+  cursor: pointer;
+  color: #2e077d;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 13px 31px;
+  text-decoration: none;
+  font-family: "zilla slab", sans-serif;
+  width: auto !important;
+  border: none;
+}
+
+.section_letsgo .row {
+  display: flex;
+  flex-direction: column;
 }
