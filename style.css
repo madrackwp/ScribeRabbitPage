@@ -4,7 +4,7 @@ img {
   width: 100%;
 }
 
-body{
+body {
   padding-top: 96px;
 }
 
@@ -76,7 +76,7 @@ h3 {
 }
 
 .section_gettingStarted {
-  background-color: #cdcdcd;
+  background-color: #ff7f5c;
 }
 
 .section_gettingStarted img {
@@ -102,14 +102,64 @@ h3 {
   font-family: "zilla slab", sans-serif;
 }
 
-.section_tryitout{
+.section_tryitout {
   background: url("./images/background\ 2.png") no-repeat;
   background-size: cover;
 }
 
-.section_tryitout img{
+.section_tryitout img {
   max-height: 300px;
   width: auto;
+}
+
+.section_tryitout .desc-2,
+.section_tryitout .desc-3,
+.section_tryitout .desc-4 {
+  display: none;
+}
+
+.section_tryitout p,
+.section_tryitout li {
+  font-family: "Zilla Slab", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0.025em;
+  text-align: left;
+  color: #fff;
+}
+
+.section_tryitout h4 {
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0.025em;
+  text-align: left;
+  color: #ff7f5c;
+}
+
+.section_tryitout .header-selected {
+  font-weight: 600;
+}
+
+.section_tryitout ul {
+  list-style: none; /* Remove default bullets */
+}
+
+.section_tryitout ul li::before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #ff7f5c; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.section_tryitout ul li.header-selected::before {
+  content: "\25A0";
 }
 
 .section_active_users {
@@ -158,12 +208,12 @@ h3 {
   flex-direction: column;
 }
 
-.section_form{
+.section_form {
   background: url("/images/background.png") no-repeat;
   background-size: cover;
 }
 
-.section_form input{
+.section_form input {
   background: none;
   border: 4px solid #2e077d;
   border-radius: 10px;
@@ -171,8 +221,7 @@ h3 {
   padding: 10px 15px;
   font-family: "work sans", sans-serif;
   font-weight: 600;
-  color: 
-  rgba(46, 11, 146, 0.36);
+  color: rgba(46, 11, 146, 0.36);
 }
 
 input::-webkit-outer-spin-button,
@@ -182,40 +231,40 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.section_form .enquiry-form{
+.section_form .enquiry-form {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   column-gap: 10px;
   row-gap: 15px;
 }
-.section_form .enquiry-form .name-input{
+.section_form .enquiry-form .name-input {
   grid-column: 1 / span 5;
   grid-row: 1;
 }
 
-.section_form .enquiry-form .num-input{
+.section_form .enquiry-form .num-input {
   grid-column: 4 / span 2;
   grid-row: 2;
 }
 
-.section_form .enquiry-form .email-input{
+.section_form .enquiry-form .email-input {
   grid-column: 1 / span 3;
   grid-row: 2;
 }
-.section_form .enquiry-form .enquiry-input{
+.section_form .enquiry-form .enquiry-input {
   grid-column: 1 / -1;
   grid-row: 3/5;
 }
-.section_form button{
+.section_form button {
   border: none;
   background-color: #2e077d;
-  color: #FFDA93;
-  font-family: 'Work Sans', sans-serif;
+  color: #ffda93;
+  font-family: "Work Sans", sans-serif;
   border-radius: 15px;
   font-size: 24px;
   font-weight: 600;
@@ -224,32 +273,33 @@ input[type=number] {
   grid-row: 5;
 }
 
-.section_form .contact-email img, 
-.section_form .contact-address img{
+.section_form .contact-email img,
+.section_form .contact-address img {
   height: auto;
   width: auto;
   padding: 5px;
 }
 
-.contact-address, .contact-email{
+.contact-address,
+.contact-email {
   display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
-.contact-email{
+.contact-email {
   padding-bottom: 50px;
 }
 
-.contact-address p, .contact-email a {
+.contact-address p,
+.contact-email a {
   font-size: 24px;
   font-weight: 600;
   font-family: "work sans", sans-serif;
-  color:#2e077d;
+  color: #2e077d;
 }
 
-
-.section_form h3{
+.section_form h3 {
   text-align: center;
   padding-top: 20px;
 }
