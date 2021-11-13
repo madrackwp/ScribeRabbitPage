@@ -4,6 +4,10 @@ img {
   width: 100%;
 }
 
+body{
+  padding-top: 96px;
+}
+
 p {
   font-family: "Zilla Slab", sans-serif;
   font-size: 24px;
@@ -98,6 +102,16 @@ h3 {
   font-family: "zilla slab", sans-serif;
 }
 
+.section_tryitout{
+  background: url("./images/background\ 2.png") no-repeat;
+  background-size: cover;
+}
+
+.section_tryitout img{
+  max-height: 300px;
+  width: auto;
+}
+
 .section_active_users {
   background: url("./images/Vector.png") left no-repeat #ff7f5c;
   background-size: auto;
@@ -142,4 +156,100 @@ h3 {
 .section_letsgo .row {
   display: flex;
   flex-direction: column;
+}
+
+.section_form{
+  background: url("/images/background.png") no-repeat;
+  background-size: cover;
+}
+
+.section_form input{
+  background: none;
+  border: 4px solid #2e077d;
+  border-radius: 10px;
+  font-size: 24px;
+  padding: 10px 15px;
+  font-family: "work sans", sans-serif;
+  font-weight: 600;
+  color: 
+  rgba(46, 11, 146, 0.36);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.section_form .enquiry-form{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 10px;
+  row-gap: 15px;
+}
+.section_form .enquiry-form .name-input{
+  grid-column: 1 / span 5;
+  grid-row: 1;
+}
+
+.section_form .enquiry-form .num-input{
+  grid-column: 4 / span 2;
+  grid-row: 2;
+}
+
+.section_form .enquiry-form .email-input{
+  grid-column: 1 / span 3;
+  grid-row: 2;
+}
+.section_form .enquiry-form .enquiry-input{
+  grid-column: 1 / -1;
+  grid-row: 3/5;
+}
+.section_form button{
+  border: none;
+  background-color: #2e077d;
+  color: #FFDA93;
+  font-family: 'Work Sans', sans-serif;
+  border-radius: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px 25px;
+  grid-column: 4 / 6;
+  grid-row: 5;
+}
+
+.section_form .contact-email img, 
+.section_form .contact-address img{
+  height: auto;
+  width: auto;
+  padding: 5px;
+}
+
+.contact-address, .contact-email{
+  display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.contact-email{
+  padding-bottom: 50px;
+}
+
+.contact-address p, .contact-email a {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "work sans", sans-serif;
+  color:#2e077d;
+}
+
+
+.section_form h3{
+  text-align: center;
+  padding-top: 20px;
 }
