@@ -13,10 +13,12 @@
   <body>
     <header class="navbar">
       <ul>
-        <li>SCRIBERABBIT</li>
-        <li style="float: right"><a href="">Contact</a></li>
-        <li style="float: right"><a href="">Features</a></li>
-        <li style="float: right"><a href="">Log In</a></li>
+        <li><img src="./images/SR-logo-h[16373] 1.png" alt="" class="logo" /></li>
+        <li class="links float-right">
+          <button class="login-button">Log In</button>
+        </li>
+        <li class="links float-right"><a href="">Features</a></li>
+        <li class="links float-right"><a href="">Contact</a></li>
       </ul>
     </header>
     <div class="section_gettingStarted col-12">
@@ -27,17 +29,17 @@
             <h2>Video Transcription</h2>
             <h3>made simple</h3>
             <p>Meet ScribeRabbit, helping you transcribe your videos in minutes with the power of AI.</p>
-            <button>Get Started&#129130;</button>
+            <button>Get Started&nbsp;&#129130;</button>
           </div>
         </div>
-        <div class="col-lg-6 col-xs-12">
+        <div class="col-lg-6 col-xs-12" style="text-align: right">
           <img src="./images/asset 1.png" alt="" />
         </div>
       </div>
     </div>
     <div class="section_tryitout">
       <div class="row">
-        <div class="col-4">
+        <div class="col-xs-12 col-lg-3 hidden-mobile">
           <div class="try-header">
             <ul class="slides">
               <li id="slide-1" class="header-selected">AI driven transciption</li>
@@ -47,44 +49,70 @@
             </ul>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-xs-12 col-lg-4 hidden-mobile">
           <div class="try-description">
-            <div class="desc-1">
+            <div id="desc-1">
               <h4>Streamline your video transcriptions</h4>
               <p>
                 Our Automatic speech recognition (ASR) AI will help you to transcribe the videos fast Choose from multiple available AI models to find the one best suited for your needs<br /><br />
                 Choose from multiple available AI models to find the one best suited for your needs
               </p>
             </div>
-            <div class="desc-2">
-              <h4>Streamline your video transcriptions</h4>
-              <p>Our Automatic speech recognition (ASR) AI will help you to transcribe the videos fast Choose from multiple available AI models to find the one best suited for your needs</p>
+            <div id="desc-2" class="hidden">
+              <h4>Stay organised</h4>
+              <p>Working on multiple projects? Have access to multiple workspaces to organise your videos into different categories</p>
             </div>
-            <div class="desc-3">
-              <h4>Streamline your video transcriptions</h4>
-              <p>Our Automatic speech recognition (ASR) AI will help you to transcribe the videos fast Choose from multiple available AI models to find the one best suited for your needs</p>
+            <div id="desc-3" class="hidden">
+              <h4>Increased efficiency and accuracy</h4>
+              <p>Easily edit your transcribed results manually as needed</p>
             </div>
-            <div class="desc-4">
-              <h4>Streamline your video transcriptions</h4>
-              <p>Our Automatic speech recognition (ASR) AI will help you to transcribe the videos fast Choose from multiple available AI models to find the one best suited for your needs</p>
+            <div id="desc-4" class="hidden">
+              <h4>Keep your team in check</h4>
+              <p>Assign editing and reviewing tasks to different team members for increase productivity</p>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-xs-12 col-lg-5 hidden-mobile">
           <div class="try-img">
             <img src="./images/logo.png" alt="" />
           </div>
         </div>
       </div>
+      <div class="hidden-desktop">
+        <div class="text-container">
+          <h3>AI driven transciption</h3>
+          <h4>Streamline your video transcriptions</h4>
+          <p>
+            Our Automatic speech recognition (ASR) AI will help you to transcribe the videos fast Choose from multiple available AI models to find the one best suited for your needs
+            <br />
+            Choose from multiple available AI models to find the one best suited for your needs
+          </p>
+        </div>
+        <div class="text-container">
+          <h3>Multiple workspaces</h3>
+          <h4>Stay organised</h4>
+          <p>Working on multiple projects? Have access to multiple workspaces to organise your videos into different categories</p>
+        </div>
+        <div class="text-container">
+          <h3>Finetuning</h3>
+          <h4>Increased efficiency and accuracy</h4>
+          <p>Easily edit your transcribed results manually as needed</p>
+        </div>
+        <div class="text-container">
+          <h3>Make teamwork easier</h3>
+          <h4>Keep your team in check</h4>
+          <p>Assign editing and reviewing tasks to different team members for increase productivity</p>
+        </div>
+      </div>
     </div>
     <div class="section_active_users">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 text-container">
           <div class="dark-font">
-            <p style="font-size: 32px; font-weight: 400">supported by the fastest growing AI powered platform</p>
+            <p class="center-text para1">supported by the fastest growing AI powered platform</p>
           </div>
           <div class="light-font">
-            <p style="font-size: 64px; font-weight: 700">with over 1,100 active users</p>
+            <p class="center-text para2">with over 1,100 active users</p>
           </div>
         </div>
       </div>
@@ -92,53 +120,53 @@
     <div class="section_step1">
       <div class="row">
         <div class="col-xs-12 col-lg-6">
-          <p class="step-header">1. Upload a video</p>
+          <p class="step-header" style="padding-top: 20px">1. Upload a video</p>
           <p>Easily upload your video from your local computer, and wait a few moments for your video to be processed.</p>
           <p>Once complete, start transcribing!</p>
         </div>
-        <div class="col-xs-12 col-lg-6">
-          <img src="./images/inst 1.png" alt="" />
+        <div class="col-xs-12 col-lg-6 inst-img-container">
+          <img src="./images/inst 1.png" class="inst-img" alt="" />
         </div>
       </div>
     </div>
     <div class="section_step2">
       <div class="row">
-        <div class="col-xs-12 col-lg-6">
-          <img src="./images/inst 2.png" alt="" />
-        </div>
-        <div class="col-xs-12 col-lg-6">
+        <div class="col-xs-12 col-lg-6 col-lg order-lg-2">
           <p class="step-header">2. Select and transcribe</p>
           <p>Choose your AI, how exactly you want the AI to transcribe your video, and preview your settings on the video itself!</p>
           <p>Satisfied? Let the AI work its magic.</p>
+        </div>
+        <div class="col-xs-12 col-lg-6 col-lg order-lg-1 inst-img-container">
+          <img src="./images/inst 2.png" class="inst-img" alt="" />
         </div>
       </div>
     </div>
     <div class="section_step3">
       <div class="row">
         <div class="col-xs-12 col-lg-6">
-          <img src="./images/inst 3.png" alt="" />
-        </div>
-        <div class="col-xs-12 col-lg-6">
           <p class="step-header">3. Review and edit</p>
           <p>Keep track of the transcribed text which has been time sectioned on the right panel for easy playback.</p>
           <p>Finetune as needed by editing directly into the textarea.</p>
+        </div>
+        <div class="col-xs-12 col-lg-6 inst-img-container">
+          <img src="./images/inst 3.png" class="inst-img" alt="" />
         </div>
       </div>
     </div>
     <div class="section_step4">
       <div class="row">
-        <div class="col-xs-12 col-lg-6">
+        <div class="col-xs-12 col-lg-6 order-lg-2">
           <p class="step-header">4. Save and download</p>
           <p>Once done, you can save your edits and download the subtitles to your local computer!</p>
         </div>
-        <div class="col-xs-12 col-lg-6">
-          <img src="./images/inst 1.png" alt="" />
+        <div class="col-xs-12 col-lg-6 order-lg-1 inst-img-container">
+          <img src="./images/inst 4.png" class="inst-img" alt="" />
         </div>
       </div>
     </div>
     <div class="section_letsgo">
       <div class="row">
-        <p style="color: #fff; font-size: 64px; font-weight: 700; font-family: 'Work Sans', sans-serif; text-align: center">Ready to get started?</p>
+        <h3 style="color: #fff" class="center-text">Ready to get started?</h3>
         <p style="color: #fff; font-weight: 600; text-align: center">Setting up ScribeRabbit is easy. You're just a few clicks away!</p>
         <button>Let's Go!</button>
       </div>
