@@ -431,6 +431,12 @@ input[type="number"] {
   color: #2e077d;
 }
 
+@media screen and (max-width: 375px) {
+  .section_gettingStarted img {
+    width: 350px;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .row {
     padding: 50px 60px;
@@ -443,6 +449,11 @@ input[type="number"] {
   .hidden-desktop {
     display: none;
   }
+
+  .navbar ul {
+    text-align: left;
+  }
+
   .navbar li {
     display: inline;
     padding-left: 20px;
@@ -457,7 +468,7 @@ input[type="number"] {
   }
 
   .section_gettingStarted img {
-    max-height: 500px;
+    max-height: 440px;
   }
 
   .section_tryitout img {
